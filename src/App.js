@@ -1,10 +1,20 @@
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Crew from "./pages/Crew/Crew";
+import Destination from "./pages/Destination/Destination";
+import Home from "./pages/Home/Home";
+import Technology from "./pages/Technology/Technology";
 
 function App() {
   return (
     <>
-      <h1>Space Tourism Website</h1>
-      <Routes>{/* Route goes here... */}</Routes>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/destination" element={<Destination />} />
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
+      </Routes>
     </>
   );
 }
