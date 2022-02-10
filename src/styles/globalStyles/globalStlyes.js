@@ -3,9 +3,9 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
     :root {
         /* colors */
-        --clr-dark: #0B0D17;
-        --clr-light: #D0D6F9;
-        --clr-white: #FFFFFF;
+        --clr-dark: 230 35% 7%;
+        --clr-light: 231 77% 90%;
+        --clr-white: 0 0% 100%;
 
         /* font-sizes */
         --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
@@ -56,8 +56,8 @@ const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         font-family: var(--ff-sans-normal);
         font-size: var(--fs-400);
-        background: var(--clr-dark);
-        color: var(--clr-white);
+        background: hsl(var(--clr-dark));
+        color: hsl(var(--clr-white));
         overflow-x: hidden;
     }
 
