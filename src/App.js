@@ -5,18 +5,22 @@ import Destination from "./pages/Destination/Destination";
 import Home from "./pages/Home/Home";
 import Technology from "./pages/Technology/Technology";
 import GlobalStyle from "./styles/globalStyles/globalStlyes";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./styles/theme/Theme";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/technology" element={<Technology />} />
-      </Routes>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/destination" element={<Destination />} />
+          <Route path="/crew" element={<Crew />} />
+          <Route path="/technology" element={<Technology />} />
+        </Routes>
+      </ThemeProvider>
     </>
   );
 }

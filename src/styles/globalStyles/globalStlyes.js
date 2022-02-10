@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
         --ff-sans-cond: "Barlow Condensed", sans-serif;
         --ff-sans-normal: "Barlow", sans-serif;
 
-        @media (min-width: 35em) { // 560 px
+        @media (min-width: ${({ theme }) => theme.breakpoints.md}) { // 560 px
             :root {
                 --fs-800: 5rem;
                 --fs-700: 2.5rem;
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
             }
         }
 
-        @media (min-width: 45em) { // 720 px
+        @media (min-width: ${({ theme }) => theme.breakpoints.lg}) { // 720 px
             :root {
                 --fs-800: 6.25rem;
                 --fs-700: 3.5rem;
