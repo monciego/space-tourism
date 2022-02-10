@@ -12,6 +12,9 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [My process](#my-process)
     - [Built with](#built-with)
   - [Author](#author)
+  - [**Usage**](#usage)
+    - [Install dependencies](#install-dependencies)
+    - [Run app](#run-app)
 
 ## Overview
 
@@ -43,3 +46,22 @@ Users should be able to:
 
 - Website - [Jericho Bantiquete](https://jerichobantiquete.netlify.app/)
 - Frontend Mentor - [@monciego](https://www.frontendmentor.io/profile/monciego)
+
+---
+
+## **Usage**
+
+### Install dependencies
+
+```npm
+npm install
+```
+
+### Run app
+
+```npm
+npm start
+```
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser
