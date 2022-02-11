@@ -52,13 +52,18 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        line-height: 1.5;
-        min-height: 100vh;
         font-family: var(--ff-sans-normal);
         font-size: var(--fs-400);
         background: hsl(var(--clr-dark));
         color: hsl(var(--clr-white));
         overflow-x: hidden;
+    }
+
+    section {
+        line-height: 1.5;
+        min-height: 100vh;
+        background-size: cover;
+        background-position: bottom center;
     }
 
     img,
