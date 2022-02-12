@@ -8,7 +8,7 @@ import {
   HomeMain,
   HomeTitle,
   StyledHome,
-} from "../../styles/styledComponents/StyledHome/Home.styled";
+} from "../../styles/StyledHome/Home.styled";
 
 const Home = () => {
   return (

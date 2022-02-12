@@ -8,7 +8,7 @@ import {
   NavigationLists,
   NavigationNum,
   StyledNavbar,
-} from "../../styles/styledComponents/StyledNavbar/Navbar.styled";
+} from "../../styles/StyledNavbar/Navbar.styled";
 import logo from "../../assets/shared/logo.svg";
 
 const Navbar = () => {

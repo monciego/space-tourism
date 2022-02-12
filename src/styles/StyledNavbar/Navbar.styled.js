@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import menuBtn from "../../../assets/shared/icon-hamburger.svg";
-import closeBtn from "../../../assets/shared/icon-close.svg";
+import menuBtn from "../../assets/shared/icon-hamburger.svg";
+import closeBtn from "../../assets/shared/icon-close.svg";
 
 export const StyledNavbar = styled.header`
   position: absolute;

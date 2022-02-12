@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import mobileHomeBG from "../../../assets/home/background-home-mobile.jpg";
-import tabletHomeBG from "../../../assets/home/background-home-tablet.jpg";
-import desktopHomeBG from "../../../assets/home/background-home-desktop.jpg";
+import mobileHomeBG from "../../assets/home/background-home-mobile.jpg";
+import tabletHomeBG from "../../assets/home/background-home-tablet.jpg";
+import desktopHomeBG from "../../assets/home/background-home-desktop.jpg";
 
 export const StyledHome = styled.section`
   overflow: hidden;
