@@ -21,6 +21,16 @@ const GlobalStyle = createGlobalStyle`
         --ff-serif: "Bellefair", serif;
         --ff-sans-cond: "Barlow Condensed", sans-serif;
         --ff-sans-normal: "Barlow", sans-serif;
+     
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-weight: 400;
+        }
 
         @media (min-width: ${({ theme }) => theme.breakpoints.md}) { // 560 px
             :root {
