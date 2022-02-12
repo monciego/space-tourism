@@ -24,7 +24,7 @@ export const HomeMain = styled.main`
   padding-inline: 1rem;
   min-height: 100vh;
 
-  & > p:not([class]) {
+  & > p {
     max-width: 50ch;
   }
 
