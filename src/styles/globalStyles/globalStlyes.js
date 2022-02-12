@@ -66,6 +66,10 @@ const GlobalStyle = createGlobalStyle`
         background-position: bottom center;
     }
 
+    main {
+        padding-top: 7rem;
+    }
+
     img,
     picture {
         max-width: 100%;
