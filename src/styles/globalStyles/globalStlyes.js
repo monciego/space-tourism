@@ -100,6 +100,28 @@ const GlobalStyle = createGlobalStyle`
             scroll-behavior: auto !important;
         }
     }
+
+    /* scrollbar */
+    /* width */
+    ::-webkit-scrollbar {
+    width: 2.25px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #0B0E17; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--clr-light)); 
+    }
 `;
 
 export default GlobalStyle;
