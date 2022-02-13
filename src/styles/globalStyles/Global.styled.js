@@ -19,12 +19,10 @@ export const SectionTitleNum = styled.span`
   color: hsl(var(--clr-white) / 0.25);
 `;
 
-export const SectionImage = styled.picture``;
-
-export const SectionImageSource = styled.source`
+export const SectionImage = styled.picture`
   display: ${({ isActive }) => (isActive ? "block" : "none")};
 `;
 
-export const SectionImg = styled.img`
-  display: ${({ isActive }) => (isActive ? "block" : "none")};
-`;
+export const SectionImageSource = styled.source``;
+
+export const SectionImg = styled.img``;

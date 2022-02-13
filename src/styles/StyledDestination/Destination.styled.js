@@ -48,19 +48,19 @@ export const DestinationTab = styled.button`
     ${({ isActive }) => (isActive ? "hsl(var(--clr-white) / 1)" : "none")};
 `;
 
-export const DestinationDetails = styled.article``;
+export const DestinationDetails = styled.article`
+  display: ${({ isActive }) => (isActive ? "block" : "none")};
+`;
 
 export const DestinationName = styled.h2`
   font-size: var(--fs-800);
   font-family: var(--ff-serif);
   text-transform: uppercase;
   color: hsl(var(--clr-white));
-  display: ${({ isActive }) => (isActive ? "block" : "none")};
 `;
 
 export const DestinationDescription = styled.p`
   font-size: var(--fs-300);
-  display: ${({ isActive }) => (isActive ? "block" : "none")};
 `;
 
 export const DestinationMeta = styled.div`
@@ -98,7 +98,6 @@ export const DestinationMetaTitle = styled.h3`
 export const DestinationMetaSubTitle = styled.p`
   font-family: var(--ff-serif);
   text-transform: uppercase;
-  display: ${({ isActive }) => (isActive ? "block" : "none")};
 `;
 
 // main

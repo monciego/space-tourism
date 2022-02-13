@@ -51,85 +51,50 @@ const Destination = () => {
           })}
         </DestinationTabContainer>
 
-        <SectionImage>
-          {dataDestination.map((destination, index) => {
-            return (
+        {dataDestination.map((destination, index) => {
+          return (
+            <SectionImage
+              isActive={tab === index ? true : false}
+              key={destination.id}
+            >
               <SectionImageSource
-                isActive={tab === index ? true : false}
-                key={destination.id}
                 srcset={destination.images.webp}
                 type="image/webp"
               />
-            );
-          })}
 
-          {dataDestination.map((destination, index) => {
-            return (
-              <SectionImg
-                isActive={tab === index ? true : false}
-                key={destination.id}
-                src={destination.images.png}
-                alt={destination.name}
-              ></SectionImg>
-            );
-          })}
-        </SectionImage>
+              <SectionImg src={destination.images.png} alt={destination.name} />
+            </SectionImage>
+          );
+        })}
 
-        <DestinationDetails>
-          {dataDestination.map((destination, index) => {
-            return (
-              <DestinationName
-                isActive={tab === index ? true : false}
-                key={destination.id}
-              >
-                {destination.name}
-              </DestinationName>
-            );
-          })}
-
-          {dataDestination.map((destination, index) => {
-            return (
-              <DestinationDescription
-                isActive={tab === index ? true : false}
-                key={destination.id}
-              >
+        {dataDestination.map((destination, index) => {
+          return (
+            <DestinationDetails
+              isActive={tab === index ? true : false}
+              key={destination.id}
+            >
+              <DestinationName>{destination.name}</DestinationName>
+              <DestinationDescription>
                 {destination.description}
               </DestinationDescription>
-            );
-          })}
 
-          <DestinationMeta>
-            <DestinationContentContainer>
-              <DestinationMetaTitle>AVG. DISTANCE</DestinationMetaTitle>
-              {dataDestination.map((destination, index) => {
-                return (
-                  <DestinationMetaSubTitle
-                    isActive={tab === index ? true : false}
-                    key={destination.id}
-                  >
+              <DestinationMeta>
+                <DestinationContentContainer>
+                  <DestinationMetaTitle>AVG. DISTANCE</DestinationMetaTitle>
+                  <DestinationMetaSubTitle>
                     {destination.distance}
                   </DestinationMetaSubTitle>
-                );
-              })}
-              <DestinationMetaSubTitle>225 MIL. km</DestinationMetaSubTitle>
-            </DestinationContentContainer>
-
-            <DestinationContentContainer>
-              <DestinationMetaTitle>Est. travel time</DestinationMetaTitle>
-
-              {dataDestination.map((destination, index) => {
-                return (
-                  <DestinationMetaSubTitle
-                    isActive={tab === index ? true : false}
-                    key={destination.id}
-                  >
+                </DestinationContentContainer>
+                <DestinationContentContainer>
+                  <DestinationMetaTitle>Est. travel time</DestinationMetaTitle>
+                  <DestinationMetaSubTitle>
                     {destination.travel}
                   </DestinationMetaSubTitle>
-                );
-              })}
-            </DestinationContentContainer>
-          </DestinationMeta>
-        </DestinationDetails>
+                </DestinationContentContainer>
+              </DestinationMeta>
+            </DestinationDetails>
+          );
+        })}
       </DestinationMain>
     </StyledDestination>
   );
