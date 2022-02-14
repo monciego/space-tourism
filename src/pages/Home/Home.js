@@ -68,7 +68,7 @@ const Home = () => {
           </HomeDescription>
         </HomeDetails>
         <HomeCTA>
-          <StyledButton>explore</StyledButton>
+          <StyledButton to="/destination">explore</StyledButton>
         </HomeCTA>
       </HomeMain>
     </StyledHome>
