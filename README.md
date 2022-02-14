@@ -69,3 +69,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 ---
 
 > ### The layout of this project can be improved.
+>
+> ### The SEO of this project can be improved.
