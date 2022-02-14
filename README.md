@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 🚧 Under Construction
-- Live Site URL: 🚧 Under Construction
+- Solution URL: [Space Tourism](https://github.com/monciego/space-tourism)
+- Live Site URL: [Space Tourism](https://spacetourism-monciego.netlify.app/)
 
 ## My process
 
