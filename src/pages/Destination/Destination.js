@@ -23,7 +23,6 @@ import { dataDestination } from "./data";
 
 const Destination = () => {
   const [tab, setTab] = useState(0);
-  console.log(tab);
 
   const tabHandler = (index) => {
     setTab(index);

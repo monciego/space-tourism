@@ -23,7 +23,6 @@ import { technologiesData } from "./data";
 
 const Technology = () => {
   const [tab, setTab] = React.useState(0);
-  console.log(tab);
 
   const tabHandler = (index) => {
     setTab(index);
