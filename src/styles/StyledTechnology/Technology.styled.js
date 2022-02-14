@@ -78,7 +78,7 @@ export const TechnologyImage = styled.div`
   display: ${({ isActive }) => (isActive ? "block" : "none")};
 
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: 0 0 0 auto;
   }
